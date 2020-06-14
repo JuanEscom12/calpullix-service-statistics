@@ -1,0 +1,15 @@
+spring:
+  application: 
+    name: calpullix-service-statistics
+  config:
+    name: '${spring.application.name}'
+  cloud:
+    config:
+      uri: http://localhost:8799
+      username: root
+      password: s3cr3t
+  profiles:
+    active: default
+    
+server:
+  port: 9105
